@@ -16,4 +16,12 @@ public class Project {
     public String getName() { return name; }
     public double getBudget() { return budget; }
     public String getStatus() { return status; }
+
+    @Override
+    public String toString() {
+        return "Project: " +
+                "name='" + name + '\'' +
+                ", budget=" + budget +
+                ", status='" + status + '\'';
+    }
 }

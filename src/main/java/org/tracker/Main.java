@@ -14,5 +14,18 @@ public class Main {
                         new Project("Orion", 70_000, "active")
                 ))
         );
+
+        // All projects name
+        List<String> projectNames = employees.stream()
+                .flatMap(emp -> emp.getProjects().stream())
+                .map(Project::getName)
+                .collect(Collectors.toList());
+
+        System.out.println("All employee's projects: " + projectNames);
+
+        //active projects
+        List<String> activeProjects = employees.stream().flatMap()
+
     }
 }
+
